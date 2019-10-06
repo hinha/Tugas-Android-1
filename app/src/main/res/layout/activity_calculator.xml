@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:textSize="18sp"
+        android:id="@+id/edtVal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bilangan Pertama" />
+
+
+    <RadioGroup
+        android:layout_below="@id/edtVal"
+        android:id="@+id/firstRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Layouts"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdTambah"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdKurang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Kurang"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdBagi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bagi"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdKali"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Kali"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:textSize="18sp"
+        android:layout_below="@id/firstRg"
+        android:id="@+id/edtVal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bilangan Pertama" />
+
+    <Button
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/edtVal2"
+        android:id="@+id/btnTampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAMPILKAN"/>
+
+    <TextView
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:hint="Hasil"
+        android:layout_below="@id/btnTampil"
+        android:id="@+id/txtHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
